@@ -1,0 +1,34 @@
+(ns
+ natal-shell.components-list
+ "This namespace is automatically generated from the React Native docs.")
+(def
+ components
+ ["ActivityIndicatorIOS"
+  "DatePickerIOS"
+  "DrawerLayoutAndroid"
+  "Image"
+  "ListView"
+  "MapView"
+  "Navigator"
+  "Modal"
+  "NavigatorIOS"
+  "PickerIOS"
+  "ProgressBarAndroid"
+  "ProgressViewIOS"
+  "ScrollView"
+  "SegmentedControlIOS"
+  "SliderIOS"
+  "SwitchAndroid"
+  "SwitchIOS"
+  "TabBarIOS"
+  "TabBarIOS.Item"
+  "Text"
+  "TextInput"
+  "ToolbarAndroid"
+  "TouchableHighlight"
+  "TouchableNativeFeedback"
+  "TouchableOpacity"
+  "TouchableWithoutFeedback"
+  "View"
+  "ViewPagerAndroid"
+  "WebView"])
