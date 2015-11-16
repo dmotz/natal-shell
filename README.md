@@ -56,3 +56,12 @@ APIs are divided into separate Clojure namespaces like so:
   (:require-macros [natal-shell.alert-ios :refer [alert prompt]]
                    [natal-shell.push-notification-ios :refer [present-local-notification]]))
 ```
+
+
+## Coda
+
+Natal Shell is automatically generated from scraping the React Native docs via
+the script in `scripts/scraper.clj`.
+
+Future areas of improvement may include optionally omitted prop arguments and
+automatic conversion of snake-case keys in maps.
