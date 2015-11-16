@@ -6,8 +6,7 @@
 
 (defn wrap-component [js-name]
   `(defmacro ~(symbol (to-kebab js-name)) [props# & children#]
-    `(apply
-      js/React.createElement
+    `(js/React.createElement
       ~'~(symbol (str "js/React." js-name))
       (cljs.core/clj->js ~props#)
       ~@children#)))
