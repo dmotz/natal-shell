@@ -57,10 +57,10 @@
 
 
 (defn method-macro [react-ns js-name symbol-prefix]
-  `(defmacro ~(symbol (to-kebab js-name)) [& args#]
+  `(defmacro ~(symbol (to-kebab js-name)) [& ~'args]
      `(~'~(symbol (str symbol-prefix js-name))
        ~'~(symbol (str "js/React." react-ns))
-       ~@args#)))
+       ~@~'args)))
 
 
 (defn make-writer [path]
