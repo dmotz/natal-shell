@@ -43,7 +43,7 @@ without the need for `apply`:
 All component names are normalized in Clojure's snake-case, for example:
 
 ```clojure
-; Using SegmentedControlIOS
+;; Using SegmentedControlIOS
 (segmented-control-ios {:values ["Emerald" "Sapphire" "Gold"]})
 ```
 
@@ -53,8 +53,11 @@ APIs are divided into separate Clojure namespaces like so:
 
 ```clojure
 (ns future-app.actions
-  (:require-macros [natal-shell.alert-ios :refer [alert prompt]]
+  (:require-macros [natal-shell.components :refer [text]]
+                   [natal-shell.alert-ios :refer [alert prompt]]
                    [natal-shell.push-notification-ios :refer [present-local-notification]]))
+
+(text {:onPress #(alert "Hello from CLJS")} "press me")
 ```
 
 
