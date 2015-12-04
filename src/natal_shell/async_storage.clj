@@ -50,6 +50,14 @@
    (clojure.core/list 'js/React.AsyncStorage)
    args)))
 (clojure.core/defmacro
+ flush-get-requests
+ [& args]
+ (clojure.core/seq
+  (clojure.core/concat
+   (clojure.core/list '.flushGetRequests)
+   (clojure.core/list 'js/React.AsyncStorage)
+   args)))
+(clojure.core/defmacro
  multi-get
  [& args]
  (clojure.core/seq
