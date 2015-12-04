@@ -1,4 +1,4 @@
-(defproject natal-shell "0.1.1"
+(defproject natal-shell "0.1.2"
   :description "A thin ClojureScript wrapper around the React Native API"
   :url "https://github.com/dmotz/natal-shell/"
   :license {:name "The MIT License (MIT)"
