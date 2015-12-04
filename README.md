@@ -3,6 +3,8 @@
 [Dan Motzenbecker](http://oxism.com), MIT License
 [@dcmotz](https://twitter.com/dcmotz)
 
+[![Clojars Project](http://clojars.org/natal-shell/latest-version.svg)](http://clojars.org/natal-shell)
+
 ---
 
 Natal Shell is a simple convenience wrapper around the React Native API,
