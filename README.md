@@ -31,8 +31,7 @@ Use them like this:
 (text {:style {:color "teal"}} "Well isn't this nice.")
 ```
 
-You can pass children as the trailing arguments, and you can even pass a collection
-without the need for `apply`:
+You can pass children as the trailing arguments or as a collection:
 
 ```clojure
 (view
@@ -61,6 +60,24 @@ APIs are divided into separate Clojure namespaces like so:
 
 (text {:onPress #(alert "Hello from CLJS")} "press me")
 ```
+
+## Error Feedback
+
+Natal Shell provides a simple macro called `with-error-view` that you can wrap around
+the body of your component's `render` to get visible feedback when an error is thrown:
+
+```clojure
+(defui HomeView
+  Object
+  (render [_]
+    (with-error-view
+      (view
+        nil
+        (throw "...")))))
+```
+
+A red screen with a stack trace will be shown, making it easier to realize where
+something's gone awry.
 
 
 ## Coda
