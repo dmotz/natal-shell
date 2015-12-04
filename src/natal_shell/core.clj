@@ -5,7 +5,7 @@
   `(try
     ~@body
     (catch
-      :default e
+      :default e#
       (view
         {:style
          {:backgroundColor "#cc0814" :flex 1 :padding 20 :paddingTop 40}}
@@ -18,7 +18,7 @@
         (text
           {:style
            {:color "white" :fontFamily "Menlo-Regular" :fontSize 16 :lineHeight 24}}
-          (.-message e))
+          (.-message e#))
 
         (text
           {:style
