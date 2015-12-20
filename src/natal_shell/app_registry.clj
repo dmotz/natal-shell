@@ -41,3 +41,11 @@
    (clojure.core/list '.runApplication)
    (clojure.core/list 'js/React.AppRegistry)
    args)))
+(clojure.core/defmacro
+ unmount-application-component-at-root-tag
+ [& args]
+ (clojure.core/seq
+  (clojure.core/concat
+   (clojure.core/list '.unmountApplicationComponentAtRootTag)
+   (clojure.core/list 'js/React.AppRegistry)
+   args)))

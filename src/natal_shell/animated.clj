@@ -26,6 +26,22 @@
    (clojure.core/list 'js/React.Animated)
    args)))
 (clojure.core/defmacro
+ add
+ [& args]
+ (clojure.core/seq
+  (clojure.core/concat
+   (clojure.core/list '.add)
+   (clojure.core/list 'js/React.Animated)
+   args)))
+(clojure.core/defmacro
+ multiply
+ [& args]
+ (clojure.core/seq
+  (clojure.core/concat
+   (clojure.core/list '.multiply)
+   (clojure.core/list 'js/React.Animated)
+   args)))
+(clojure.core/defmacro
  delay
  [& args]
  (clojure.core/seq

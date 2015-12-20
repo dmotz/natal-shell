@@ -15,6 +15,7 @@
   "PickerIOS"
   "ProgressBarAndroid"
   "ProgressViewIOS"
+  "PullToRefreshViewAndroid"
   "ScrollView"
   "SegmentedControlIOS"
   "SliderIOS"

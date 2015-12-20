@@ -26,18 +26,18 @@
    (clojure.core/list 'js/React.NetInfo)
    args)))
 (clojure.core/defmacro
+ is-connection-expensive
+ [& args]
+ (clojure.core/seq
+  (clojure.core/concat
+   (clojure.core/list '.isConnectionExpensive)
+   (clojure.core/list 'js/React.NetInfo)
+   args)))
+(clojure.core/defmacro
  is-connected
  [& args]
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.-isConnected)
-   (clojure.core/list 'js/React.NetInfo)
-   args)))
-(clojure.core/defmacro
- is-connection-metered
- [& args]
- (clojure.core/seq
-  (clojure.core/concat
-   (clojure.core/list '.-isConnectionMetered)
    (clojure.core/list 'js/React.NetInfo)
    args)))
