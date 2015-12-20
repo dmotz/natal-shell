@@ -11,17 +11,15 @@
    args)))
 (clojure.core/defmacro
  short
- [& args]
+ []
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.-SHORT)
-   (clojure.core/list 'js/React.ToastAndroid)
-   args)))
+   (clojure.core/list 'js/React.ToastAndroid))))
 (clojure.core/defmacro
  long
- [& args]
+ []
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.-LONG)
-   (clojure.core/list 'js/React.ToastAndroid)
-   args)))
+   (clojure.core/list 'js/React.ToastAndroid))))

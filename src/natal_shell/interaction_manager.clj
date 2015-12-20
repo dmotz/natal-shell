@@ -27,17 +27,15 @@
    args)))
 (clojure.core/defmacro
  events
- [& args]
+ []
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.-Events)
-   (clojure.core/list 'js/React.InteractionManager)
-   args)))
+   (clojure.core/list 'js/React.InteractionManager))))
 (clojure.core/defmacro
  add-listener
- [& args]
+ []
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.-addListener)
-   (clojure.core/list 'js/React.InteractionManager)
-   args)))
+   (clojure.core/list 'js/React.InteractionManager))))

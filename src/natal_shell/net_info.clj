@@ -35,9 +35,8 @@
    args)))
 (clojure.core/defmacro
  is-connected
- [& args]
+ []
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.-isConnected)
-   (clojure.core/list 'js/React.NetInfo)
-   args)))
+   (clojure.core/list 'js/React.NetInfo))))

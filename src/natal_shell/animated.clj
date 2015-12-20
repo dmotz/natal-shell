@@ -91,17 +91,15 @@
    args)))
 (clojure.core/defmacro
  value
- [& args]
+ []
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.-Value)
-   (clojure.core/list 'js/React.Animated)
-   args)))
+   (clojure.core/list 'js/React.Animated))))
 (clojure.core/defmacro
  value-xy
- [& args]
+ []
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.-ValueXY)
-   (clojure.core/list 'js/React.Animated)
-   args)))
+   (clojure.core/list 'js/React.Animated))))

@@ -19,9 +19,8 @@
    args)))
 (clojure.core/defmacro
  current-state
- [& args]
+ []
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.-currentState)
-   (clojure.core/list 'js/React.AppStateIOS)
-   args)))
+   (clojure.core/list 'js/React.AppStateIOS))))
