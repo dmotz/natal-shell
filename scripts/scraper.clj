@@ -56,11 +56,17 @@
     "This namespace is automatically generated from the React Native docs."))
 
 
-(defn method-macro [react-ns js-name symbol-prefix]
+(defn method-macro [react-ns js-name]
   `(defmacro ~(symbol (to-kebab js-name)) [& ~'args]
-     `(~'~(symbol (str symbol-prefix js-name))
+     `(~'~(symbol (str "." js-name))
        ~'~(symbol (str "js/React." react-ns))
        ~@~'args)))
+
+
+(defn property-macro [react-ns js-name]
+  `(defmacro ~(symbol (to-kebab js-name)) []
+     `(~'~(symbol (str ".-" js-name))
+        ~'~(symbol (str "js/React." react-ns)))))
 
 
 (defn make-writer [path]
@@ -81,8 +87,8 @@
           (binding [*out* w]
             (pprint (make-ns (to-kebab k)))
             (doseq [m methods]
-              (pprint (method-macro k m ".")))
+              (pprint (method-macro k m)))
             (doseq [p properties]
-              (pprint (method-macro k p ".-")))))))))
+              (pprint (property-macro k p)))))))))
 
 (init)
