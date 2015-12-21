@@ -12,6 +12,7 @@
 (def entry-url "/react-native/docs/getting-started.html")
 (def base-path "src/natal_shell/")
 (def comp-file "components_list")
+(def constructors {"Animated" #{"Value" "ValueXY"}})
 
 
 (defn select-doc-section [n]
@@ -63,6 +64,12 @@
        ~@~'args)))
 
 
+(defn constructor-macro [react-ns js-name]
+  `(defmacro ~(symbol (to-kebab js-name)) [& ~'args]
+     `(~'~(symbol (str "js/React." react-ns "." js-name "."))
+        ~@~'args)))
+
+
 (defn property-macro [react-ns js-name]
   `(defmacro ~(symbol (to-kebab js-name)) []
      `(~'~(symbol (str ".-" js-name))
@@ -89,6 +96,9 @@
             (doseq [m methods]
               (pprint (method-macro k m)))
             (doseq [p properties]
-              (pprint (property-macro k p)))))))))
+              (pprint
+                ((if (contains? (get constructors k) p)
+                  constructor-macro
+                  property-macro) k p)))))))))
 
 (init)
