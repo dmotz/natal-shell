@@ -12,6 +12,7 @@
 (def entry-url "/react-native/docs/getting-started.html")
 (def base-path "src/natal_shell/")
 (def comp-file "components_list")
+(def animated-components (map #(str "Animated." %) ["View" "Text" "Image"]))
 (def constructors {"Animated" #{"Value" "ValueXY"}})
 
 
@@ -86,7 +87,11 @@
       (with-open [w (make-writer comp-file)]
         (binding [*out* w]
           (pprint (make-ns "components-list"))
-          (pprint `(def ~'components ~(vec (<!! (fetch-comps! entry-page))))))))
+          (pprint `(def ~'components ~(-> (fetch-comps! entry-page)
+                                          <!!
+                                          (concat animated-components)
+                                          sort
+                                          vec))))))
 
     (doseq [[k {:keys [methods properties]}] (<!! (fetch-apis! entry-page))]
       (go

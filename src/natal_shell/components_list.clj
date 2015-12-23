@@ -4,6 +4,9 @@
 (def
  components
  ["ActivityIndicatorIOS"
+  "Animated.Image"
+  "Animated.Text"
+  "Animated.View"
   "DatePickerIOS"
   "DrawerLayoutAndroid"
   "Image"
