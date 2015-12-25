@@ -61,6 +61,16 @@ APIs are divided into separate Clojure namespaces like so:
 (text {:onPress #(alert "Hello from CLJS")} "press me")
 ```
 
+#### `ListView.DataSource`
+One deviation from the React Native docs is that the `DataSource` constructor
+is not a property of the `ListView` component constructor and exists in its own
+module:
+
+```clojure
+[natal-shell.data-source :refer [data-source clone-with-rows]]
+```
+
+
 ## Error Feedback
 
 Natal Shell provides a simple macro called `with-error-view` that you can wrap around
@@ -73,7 +83,7 @@ the body of your component's `render` to get visible feedback when an error is t
     (with-error-view
       (view
         nil
-        (throw "...")))))
+        (this-non-existent-function-will-throw "and render the error screen")))))
 ```
 
 A red screen with a stack trace will be shown, making it easier to realize where
