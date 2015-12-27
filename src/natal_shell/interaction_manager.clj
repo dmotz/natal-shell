@@ -26,6 +26,14 @@
    (clojure.core/list 'js/React.InteractionManager)
    args)))
 (clojure.core/defmacro
+ set-deadline
+ [& args]
+ (clojure.core/seq
+  (clojure.core/concat
+   (clojure.core/list '.setDeadline)
+   (clojure.core/list 'js/React.InteractionManager)
+   args)))
+(clojure.core/defmacro
  events
  []
  (clojure.core/seq
