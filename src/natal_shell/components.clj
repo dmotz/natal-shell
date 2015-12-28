@@ -12,8 +12,17 @@
       ~@children#)))
 
 
+(defn wrap-reagent [js-name]
+  `(def ~(symbol (to-kebab js-name))
+    (r/adapt-react-class (~(symbol (str ".-" js-name)) ~'js/React))))
+
+
 (defmacro wrap-all []
   `(do ~@(map wrap-component components)))
+
+
+(defmacro wrap-all-reagent []
+  `(do ~@(map wrap-reagent components)))
 
 
 (wrap-all)
