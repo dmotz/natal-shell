@@ -9,11 +9,13 @@
 
 
 (defn modify-tree [xs x]
-  (if (seq? x)
-    (conj xs (apply list (reduce modify-tree [] x)))
-    (if (= 'js/React.createElement (last xs))
-      (conj xs (symbol (str "js/React." (to-camel x))))
-      (conj xs x))))
+  (conj
+    xs
+    (if (seq? x)
+      (apply list (reduce modify-tree [] x))
+      (if (= 'js/React.createElement (last xs))
+        (symbol (str "js/React." (to-camel x)))
+        x))))
 
 
 (defmacro hiccup [content]
