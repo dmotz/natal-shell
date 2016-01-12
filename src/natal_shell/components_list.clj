@@ -19,6 +19,7 @@
   "ProgressBarAndroid"
   "ProgressViewIOS"
   "PullToRefreshViewAndroid"
+  "RefreshControl"
   "ScrollView"
   "SegmentedControlIOS"
   "SliderIOS"
