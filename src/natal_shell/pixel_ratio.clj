@@ -26,6 +26,14 @@
    (clojure.core/list 'js/React.PixelRatio)
    args)))
 (clojure.core/defmacro
+ round-to-nearest-pixel
+ [& args]
+ (clojure.core/seq
+  (clojure.core/concat
+   (clojure.core/list '.roundToNearestPixel)
+   (clojure.core/list 'js/React.PixelRatio)
+   args)))
+(clojure.core/defmacro
  start-detecting
  [& args]
  (clojure.core/seq
