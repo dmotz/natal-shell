@@ -4,7 +4,8 @@
     [natal-shell.utils :refer [to-kebab to-snake]]
     [clojure.pprint :refer [pprint]]
     [clojure.java.io :as io]
-    [net.cgrand.enlive-html :refer [html-resource select nth-child]]))
+    [clojure.string :refer [trim]]
+    [net.cgrand.enlive-html :refer [html-resource select nth-child text-node]]))
 
 
 (def ns-prefix "natal-shell.")
@@ -35,8 +36,9 @@
       (map #(fetch! (get-in % [:attrs :href])))
       doall
       (map <!!)
-      (map #(select % [:h1]))
-      (map #(-> % first :content first str)))))
+      (map #(select % [:h1 :> text-node]))
+      (map first)
+      (map trim))))
 
 
 (defn fetch-apis! [page]
