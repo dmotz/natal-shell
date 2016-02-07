@@ -50,7 +50,7 @@
       (map
         (fn [page]
           (let [prop-sections (select page [:.props])]
-            [(-> (select page [:h1]) first :content first)
+            [(-> (select page [:h1 :> text-node]) first trim)
              {:methods    (map select-name (select (first prop-sections) [:.prop]))
               :properties (map select-name (select (second prop-sections) [:.prop]))}]))))))
 
