@@ -9,8 +9,8 @@
 
 
 (def ns-prefix "natal-shell.")
-(def base-url  "http://facebook.github.io")
-(def entry-url "/react-native/docs/getting-started.html")
+(def base-url  "https://facebook.github.io/react-native/")
+(def entry-url "docs/getting-started.html")
 (def base-path "src/natal_shell/")
 (def comp-file "components_list")
 (def animated-components (map #(str "Animated." %) ["View" "Text" "Image"]))
@@ -32,7 +32,7 @@
 
 (defn fetch-comps! [page]
   (go
-    (->> (select page (select-doc-section 5))
+    (->> (select page (select-doc-section 6))
       (map #(fetch! (get-in % [:attrs :href])))
       doall
       (map <!!)
@@ -43,7 +43,7 @@
 
 (defn fetch-apis! [page]
   (go
-    (->> (select page (select-doc-section 6))
+    (->> (select page (select-doc-section 7))
       (map #(fetch! (get-in % [:attrs :href])))
       doall
       (map <!!)
