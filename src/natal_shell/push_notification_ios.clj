@@ -42,6 +42,14 @@
    (clojure.core/list 'js/React.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
+ cancel-local-notifications
+ [& args]
+ (clojure.core/seq
+  (clojure.core/concat
+   (clojure.core/list '.cancelLocalNotifications)
+   (clojure.core/list 'js/React.PushNotificationIOS)
+   args)))
+(clojure.core/defmacro
  add-event-listener
  [& args]
  (clojure.core/seq

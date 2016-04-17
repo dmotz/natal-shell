@@ -10,6 +10,14 @@
    (clojure.core/list 'js/React.NativeMethodsMixin)
    args)))
 (clojure.core/defmacro
+ measure-in-window
+ [& args]
+ (clojure.core/seq
+  (clojure.core/concat
+   (clojure.core/list '.measureInWindow)
+   (clojure.core/list 'js/React.NativeMethodsMixin)
+   args)))
+(clojure.core/defmacro
  measure-layout
  [& args]
  (clojure.core/seq

@@ -42,6 +42,14 @@
    (clojure.core/list 'js/React.Animated)
    args)))
 (clojure.core/defmacro
+ modulo
+ [& args]
+ (clojure.core/seq
+  (clojure.core/concat
+   (clojure.core/list '.modulo)
+   (clojure.core/list 'js/React.Animated)
+   args)))
+(clojure.core/defmacro
  delay
  [& args]
  (clojure.core/seq
