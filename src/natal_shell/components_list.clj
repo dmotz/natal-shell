@@ -22,6 +22,7 @@
   "RefreshControl"
   "ScrollView"
   "SegmentedControlIOS"
+  "Slider"
   "SliderIOS"
   "StatusBar"
   "Switch"
