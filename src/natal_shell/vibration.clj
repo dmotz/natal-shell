@@ -9,3 +9,11 @@
    (clojure.core/list '.vibrate)
    (clojure.core/list 'js/React.Vibration)
    args)))
+(clojure.core/defmacro
+ cancel
+ [& args]
+ (clojure.core/seq
+  (clojure.core/concat
+   (clojure.core/list '.cancel)
+   (clojure.core/list 'js/React.Vibration)
+   args)))
