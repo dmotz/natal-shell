@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.vibrate)
-   (clojure.core/list 'js/React.Vibration)
+   (clojure.core/list 'js/ReactNative.Vibration)
    args)))
 (clojure.core/defmacro
  cancel
@@ -15,5 +15,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.cancel)
-   (clojure.core/list 'js/React.Vibration)
+   (clojure.core/list 'js/ReactNative.Vibration)
    args)))

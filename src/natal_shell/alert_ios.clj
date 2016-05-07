@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.alert)
-   (clojure.core/list 'js/React.AlertIOS)
+   (clojure.core/list 'js/ReactNative.AlertIOS)
    args)))
 (clojure.core/defmacro
  prompt
@@ -15,5 +15,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.prompt)
-   (clojure.core/list 'js/React.AlertIOS)
+   (clojure.core/list 'js/ReactNative.AlertIOS)
    args)))

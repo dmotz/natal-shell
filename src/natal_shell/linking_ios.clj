@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.addEventListener)
-   (clojure.core/list 'js/React.LinkingIOS)
+   (clojure.core/list 'js/ReactNative.LinkingIOS)
    args)))
 (clojure.core/defmacro
  remove-event-listener
@@ -15,7 +15,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.removeEventListener)
-   (clojure.core/list 'js/React.LinkingIOS)
+   (clojure.core/list 'js/ReactNative.LinkingIOS)
    args)))
 (clojure.core/defmacro
  open-url
@@ -23,7 +23,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.openURL)
-   (clojure.core/list 'js/React.LinkingIOS)
+   (clojure.core/list 'js/ReactNative.LinkingIOS)
    args)))
 (clojure.core/defmacro
  can-open-url
@@ -31,7 +31,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.canOpenURL)
-   (clojure.core/list 'js/React.LinkingIOS)
+   (clojure.core/list 'js/ReactNative.LinkingIOS)
    args)))
 (clojure.core/defmacro
  pop-initial-url
@@ -39,5 +39,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.popInitialURL)
-   (clojure.core/list 'js/React.LinkingIOS)
+   (clojure.core/list 'js/ReactNative.LinkingIOS)
    args)))

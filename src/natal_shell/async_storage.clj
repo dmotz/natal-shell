@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.getItem)
-   (clojure.core/list 'js/React.AsyncStorage)
+   (clojure.core/list 'js/ReactNative.AsyncStorage)
    args)))
 (clojure.core/defmacro
  set-item
@@ -15,7 +15,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.setItem)
-   (clojure.core/list 'js/React.AsyncStorage)
+   (clojure.core/list 'js/ReactNative.AsyncStorage)
    args)))
 (clojure.core/defmacro
  remove-item
@@ -23,7 +23,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.removeItem)
-   (clojure.core/list 'js/React.AsyncStorage)
+   (clojure.core/list 'js/ReactNative.AsyncStorage)
    args)))
 (clojure.core/defmacro
  merge-item
@@ -31,7 +31,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.mergeItem)
-   (clojure.core/list 'js/React.AsyncStorage)
+   (clojure.core/list 'js/ReactNative.AsyncStorage)
    args)))
 (clojure.core/defmacro
  clear
@@ -39,7 +39,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.clear)
-   (clojure.core/list 'js/React.AsyncStorage)
+   (clojure.core/list 'js/ReactNative.AsyncStorage)
    args)))
 (clojure.core/defmacro
  get-all-keys
@@ -47,7 +47,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.getAllKeys)
-   (clojure.core/list 'js/React.AsyncStorage)
+   (clojure.core/list 'js/ReactNative.AsyncStorage)
    args)))
 (clojure.core/defmacro
  flush-get-requests
@@ -55,7 +55,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.flushGetRequests)
-   (clojure.core/list 'js/React.AsyncStorage)
+   (clojure.core/list 'js/ReactNative.AsyncStorage)
    args)))
 (clojure.core/defmacro
  multi-get
@@ -63,7 +63,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.multiGet)
-   (clojure.core/list 'js/React.AsyncStorage)
+   (clojure.core/list 'js/ReactNative.AsyncStorage)
    args)))
 (clojure.core/defmacro
  multi-set
@@ -71,7 +71,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.multiSet)
-   (clojure.core/list 'js/React.AsyncStorage)
+   (clojure.core/list 'js/ReactNative.AsyncStorage)
    args)))
 (clojure.core/defmacro
  multi-remove
@@ -79,7 +79,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.multiRemove)
-   (clojure.core/list 'js/React.AsyncStorage)
+   (clojure.core/list 'js/ReactNative.AsyncStorage)
    args)))
 (clojure.core/defmacro
  multi-merge
@@ -87,5 +87,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.multiMerge)
-   (clojure.core/list 'js/React.AsyncStorage)
+   (clojure.core/list 'js/ReactNative.AsyncStorage)
    args)))

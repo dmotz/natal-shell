@@ -7,5 +7,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.alert)
-   (clojure.core/list 'js/React.Alert)
+   (clojure.core/list 'js/ReactNative.Alert)
    args)))

@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.showActionSheetWithOptions)
-   (clojure.core/list 'js/React.ActionSheetIOS)
+   (clojure.core/list 'js/ReactNative.ActionSheetIOS)
    args)))
 (clojure.core/defmacro
  show-share-action-sheet-with-options
@@ -15,5 +15,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.showShareActionSheetWithOptions)
-   (clojure.core/list 'js/React.ActionSheetIOS)
+   (clojure.core/list 'js/ReactNative.ActionSheetIOS)
    args)))

@@ -7,5 +7,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.create)
-   (clojure.core/list 'js/React.PanResponder)
+   (clojure.core/list 'js/ReactNative.PanResponder)
    args)))

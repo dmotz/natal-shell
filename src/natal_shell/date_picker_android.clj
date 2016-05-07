@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.open)
-   (clojure.core/list 'js/React.DatePickerAndroid)
+   (clojure.core/list 'js/ReactNative.DatePickerAndroid)
    args)))
 (clojure.core/defmacro
  date-set-action
@@ -15,7 +15,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.dateSetAction)
-   (clojure.core/list 'js/React.DatePickerAndroid)
+   (clojure.core/list 'js/ReactNative.DatePickerAndroid)
    args)))
 (clojure.core/defmacro
  dismissed-action
@@ -23,5 +23,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.dismissedAction)
-   (clojure.core/list 'js/React.DatePickerAndroid)
+   (clojure.core/list 'js/ReactNative.DatePickerAndroid)
    args)))

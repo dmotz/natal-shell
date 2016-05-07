@@ -63,20 +63,20 @@
 (defn method-macro [react-ns js-name]
   `(defmacro ~(symbol (to-kebab js-name)) [& ~'args]
      `(~'~(symbol (str "." js-name))
-       ~'~(symbol (str "js/React." react-ns))
+       ~'~(symbol (str "js/ReactNative." react-ns))
        ~@~'args)))
 
 
 (defn constructor-macro [react-ns js-name]
   `(defmacro ~(symbol (to-kebab js-name)) [& ~'args]
-     `(~'~(symbol (str "js/React." react-ns "." js-name "."))
+     `(~'~(symbol (str "js/ReactNative." react-ns "." js-name "."))
         ~@~'args)))
 
 
 (defn property-macro [react-ns js-name]
   `(defmacro ~(symbol (to-kebab js-name)) []
      `(~'~(symbol (str ".-" js-name))
-        ~'~(symbol (str "js/React." react-ns)))))
+        ~'~(symbol (str "js/ReactNative." react-ns)))))
 
 
 (defn make-writer [path]

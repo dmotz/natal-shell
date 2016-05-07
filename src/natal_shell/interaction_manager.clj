@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.runAfterInteractions)
-   (clojure.core/list 'js/React.InteractionManager)
+   (clojure.core/list 'js/ReactNative.InteractionManager)
    args)))
 (clojure.core/defmacro
  create-interaction-handle
@@ -15,7 +15,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.createInteractionHandle)
-   (clojure.core/list 'js/React.InteractionManager)
+   (clojure.core/list 'js/ReactNative.InteractionManager)
    args)))
 (clojure.core/defmacro
  clear-interaction-handle
@@ -23,7 +23,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.clearInteractionHandle)
-   (clojure.core/list 'js/React.InteractionManager)
+   (clojure.core/list 'js/ReactNative.InteractionManager)
    args)))
 (clojure.core/defmacro
  set-deadline
@@ -31,7 +31,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.setDeadline)
-   (clojure.core/list 'js/React.InteractionManager)
+   (clojure.core/list 'js/ReactNative.InteractionManager)
    args)))
 (clojure.core/defmacro
  events
@@ -39,11 +39,11 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.-Events)
-   (clojure.core/list 'js/React.InteractionManager))))
+   (clojure.core/list 'js/ReactNative.InteractionManager))))
 (clojure.core/defmacro
  add-listener
  []
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.-addListener)
-   (clojure.core/list 'js/React.InteractionManager))))
+   (clojure.core/list 'js/ReactNative.InteractionManager))))

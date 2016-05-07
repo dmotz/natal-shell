@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.saveImageWithTag)
-   (clojure.core/list 'js/React.CameraRoll)
+   (clojure.core/list 'js/ReactNative.CameraRoll)
    args)))
 (clojure.core/defmacro
  get-photos
@@ -15,5 +15,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.getPhotos)
-   (clojure.core/list 'js/React.CameraRoll)
+   (clojure.core/list 'js/ReactNative.CameraRoll)
    args)))
