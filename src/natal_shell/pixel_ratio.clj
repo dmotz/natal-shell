@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.get)
-   (clojure.core/list 'js/React.PixelRatio)
+   (clojure.core/list 'js/ReactNative.PixelRatio)
    args)))
 (clojure.core/defmacro
  get-font-scale
@@ -15,7 +15,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.getFontScale)
-   (clojure.core/list 'js/React.PixelRatio)
+   (clojure.core/list 'js/ReactNative.PixelRatio)
    args)))
 (clojure.core/defmacro
  get-pixel-size-for-layout-size
@@ -23,7 +23,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.getPixelSizeForLayoutSize)
-   (clojure.core/list 'js/React.PixelRatio)
+   (clojure.core/list 'js/ReactNative.PixelRatio)
    args)))
 (clojure.core/defmacro
  round-to-nearest-pixel
@@ -31,7 +31,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.roundToNearestPixel)
-   (clojure.core/list 'js/React.PixelRatio)
+   (clojure.core/list 'js/ReactNative.PixelRatio)
    args)))
 (clojure.core/defmacro
  start-detecting
@@ -39,5 +39,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.startDetecting)
-   (clojure.core/list 'js/React.PixelRatio)
+   (clojure.core/list 'js/ReactNative.PixelRatio)
    args)))

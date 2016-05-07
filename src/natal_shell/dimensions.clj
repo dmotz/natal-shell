@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.set)
-   (clojure.core/list 'js/React.Dimensions)
+   (clojure.core/list 'js/ReactNative.Dimensions)
    args)))
 (clojure.core/defmacro
  get
@@ -15,5 +15,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.get)
-   (clojure.core/list 'js/React.Dimensions)
+   (clojure.core/list 'js/ReactNative.Dimensions)
    args)))

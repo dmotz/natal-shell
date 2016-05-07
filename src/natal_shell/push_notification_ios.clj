@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.presentLocalNotification)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  schedule-local-notification
@@ -15,7 +15,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.scheduleLocalNotification)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  cancel-all-local-notifications
@@ -23,7 +23,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.cancelAllLocalNotifications)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  set-application-icon-badge-number
@@ -31,7 +31,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.setApplicationIconBadgeNumber)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  get-application-icon-badge-number
@@ -39,7 +39,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.getApplicationIconBadgeNumber)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  cancel-local-notifications
@@ -47,7 +47,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.cancelLocalNotifications)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  add-event-listener
@@ -55,7 +55,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.addEventListener)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  request-permissions
@@ -63,7 +63,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.requestPermissions)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  abandon-permissions
@@ -71,7 +71,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.abandonPermissions)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  check-permissions
@@ -79,7 +79,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.checkPermissions)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  remove-event-listener
@@ -87,7 +87,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.removeEventListener)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  pop-initial-notification
@@ -95,7 +95,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.popInitialNotification)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  constructor
@@ -103,7 +103,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.constructor)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  get-message
@@ -111,7 +111,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.getMessage)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  get-sound
@@ -119,7 +119,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.getSound)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  get-alert
@@ -127,7 +127,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.getAlert)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  get-badge-count
@@ -135,7 +135,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.getBadgeCount)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
  get-data
@@ -143,5 +143,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.getData)
-   (clojure.core/list 'js/React.PushNotificationIOS)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))

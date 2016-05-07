@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.addEventListener)
-   (clojure.core/list 'js/React.AppStateIOS)
+   (clojure.core/list 'js/ReactNative.AppStateIOS)
    args)))
 (clojure.core/defmacro
  remove-event-listener
@@ -15,7 +15,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.removeEventListener)
-   (clojure.core/list 'js/React.AppStateIOS)
+   (clojure.core/list 'js/ReactNative.AppStateIOS)
    args)))
 (clojure.core/defmacro
  current-state
@@ -23,4 +23,4 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.-currentState)
-   (clojure.core/list 'js/React.AppStateIOS))))
+   (clojure.core/list 'js/ReactNative.AppStateIOS))))

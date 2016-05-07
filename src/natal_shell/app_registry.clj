@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.registerConfig)
-   (clojure.core/list 'js/React.AppRegistry)
+   (clojure.core/list 'js/ReactNative.AppRegistry)
    args)))
 (clojure.core/defmacro
  register-component
@@ -15,7 +15,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.registerComponent)
-   (clojure.core/list 'js/React.AppRegistry)
+   (clojure.core/list 'js/ReactNative.AppRegistry)
    args)))
 (clojure.core/defmacro
  register-runnable
@@ -23,7 +23,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.registerRunnable)
-   (clojure.core/list 'js/React.AppRegistry)
+   (clojure.core/list 'js/ReactNative.AppRegistry)
    args)))
 (clojure.core/defmacro
  get-app-keys
@@ -31,7 +31,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.getAppKeys)
-   (clojure.core/list 'js/React.AppRegistry)
+   (clojure.core/list 'js/ReactNative.AppRegistry)
    args)))
 (clojure.core/defmacro
  run-application
@@ -39,7 +39,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.runApplication)
-   (clojure.core/list 'js/React.AppRegistry)
+   (clojure.core/list 'js/ReactNative.AppRegistry)
    args)))
 (clojure.core/defmacro
  unmount-application-component-at-root-tag
@@ -47,5 +47,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.unmountApplicationComponentAtRootTag)
-   (clojure.core/list 'js/React.AppRegistry)
+   (clojure.core/list 'js/ReactNative.AppRegistry)
    args)))

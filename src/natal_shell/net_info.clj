@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.addEventListener)
-   (clojure.core/list 'js/React.NetInfo)
+   (clojure.core/list 'js/ReactNative.NetInfo)
    args)))
 (clojure.core/defmacro
  remove-event-listener
@@ -15,7 +15,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.removeEventListener)
-   (clojure.core/list 'js/React.NetInfo)
+   (clojure.core/list 'js/ReactNative.NetInfo)
    args)))
 (clojure.core/defmacro
  fetch
@@ -23,7 +23,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.fetch)
-   (clojure.core/list 'js/React.NetInfo)
+   (clojure.core/list 'js/ReactNative.NetInfo)
    args)))
 (clojure.core/defmacro
  is-connection-expensive
@@ -31,7 +31,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.isConnectionExpensive)
-   (clojure.core/list 'js/React.NetInfo)
+   (clojure.core/list 'js/ReactNative.NetInfo)
    args)))
 (clojure.core/defmacro
  is-connected
@@ -39,4 +39,4 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.-isConnected)
-   (clojure.core/list 'js/React.NetInfo))))
+   (clojure.core/list 'js/ReactNative.NetInfo))))

@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.openURL)
-   (clojure.core/list 'js/React.IntentAndroid)
+   (clojure.core/list 'js/ReactNative.IntentAndroid)
    args)))
 (clojure.core/defmacro
  can-open-url
@@ -15,7 +15,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.canOpenURL)
-   (clojure.core/list 'js/React.IntentAndroid)
+   (clojure.core/list 'js/ReactNative.IntentAndroid)
    args)))
 (clojure.core/defmacro
  get-initial-url
@@ -23,5 +23,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.getInitialURL)
-   (clojure.core/list 'js/React.IntentAndroid)
+   (clojure.core/list 'js/ReactNative.IntentAndroid)
    args)))

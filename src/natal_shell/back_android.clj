@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.exitApp)
-   (clojure.core/list 'js/React.BackAndroid)
+   (clojure.core/list 'js/ReactNative.BackAndroid)
    args)))
 (clojure.core/defmacro
  add-event-listener
@@ -15,7 +15,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.addEventListener)
-   (clojure.core/list 'js/React.BackAndroid)
+   (clojure.core/list 'js/ReactNative.BackAndroid)
    args)))
 (clojure.core/defmacro
  remove-event-listener
@@ -23,5 +23,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.removeEventListener)
-   (clojure.core/list 'js/React.BackAndroid)
+   (clojure.core/list 'js/ReactNative.BackAndroid)
    args)))

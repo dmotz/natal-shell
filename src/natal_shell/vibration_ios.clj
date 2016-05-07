@@ -7,5 +7,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.vibrate)
-   (clojure.core/list 'js/React.VibrationIOS)
+   (clojure.core/list 'js/ReactNative.VibrationIOS)
    args)))

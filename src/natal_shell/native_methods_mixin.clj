@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.measure)
-   (clojure.core/list 'js/React.NativeMethodsMixin)
+   (clojure.core/list 'js/ReactNative.NativeMethodsMixin)
    args)))
 (clojure.core/defmacro
  measure-in-window
@@ -15,7 +15,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.measureInWindow)
-   (clojure.core/list 'js/React.NativeMethodsMixin)
+   (clojure.core/list 'js/ReactNative.NativeMethodsMixin)
    args)))
 (clojure.core/defmacro
  measure-layout
@@ -23,15 +23,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.measureLayout)
-   (clojure.core/list 'js/React.NativeMethodsMixin)
-   args)))
-(clojure.core/defmacro
- set-native-props
- [& args]
- (clojure.core/seq
-  (clojure.core/concat
-   (clojure.core/list '.setNativeProps)
-   (clojure.core/list 'js/React.NativeMethodsMixin)
+   (clojure.core/list 'js/ReactNative.NativeMethodsMixin)
    args)))
 (clojure.core/defmacro
  focus
@@ -39,7 +31,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.focus)
-   (clojure.core/list 'js/React.NativeMethodsMixin)
+   (clojure.core/list 'js/ReactNative.NativeMethodsMixin)
    args)))
 (clojure.core/defmacro
  blur
@@ -47,5 +39,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.blur)
-   (clojure.core/list 'js/React.NativeMethodsMixin)
+   (clojure.core/list 'js/ReactNative.NativeMethodsMixin)
    args)))

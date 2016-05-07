@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.getString)
-   (clojure.core/list 'js/React.Clipboard)
+   (clojure.core/list 'js/ReactNative.Clipboard)
    args)))
 (clojure.core/defmacro
  set-string
@@ -15,5 +15,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.setString)
-   (clojure.core/list 'js/React.Clipboard)
+   (clojure.core/list 'js/ReactNative.Clipboard)
    args)))

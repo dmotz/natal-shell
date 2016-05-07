@@ -7,7 +7,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.open)
-   (clojure.core/list 'js/React.TimePickerAndroid)
+   (clojure.core/list 'js/ReactNative.TimePickerAndroid)
    args)))
 (clojure.core/defmacro
  time-set-action
@@ -15,7 +15,7 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.timeSetAction)
-   (clojure.core/list 'js/React.TimePickerAndroid)
+   (clojure.core/list 'js/ReactNative.TimePickerAndroid)
    args)))
 (clojure.core/defmacro
  dismissed-action
@@ -23,5 +23,5 @@
  (clojure.core/seq
   (clojure.core/concat
    (clojure.core/list '.dismissedAction)
-   (clojure.core/list 'js/React.TimePickerAndroid)
+   (clojure.core/list 'js/ReactNative.TimePickerAndroid)
    args)))
