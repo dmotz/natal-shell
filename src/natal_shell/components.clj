@@ -14,7 +14,7 @@
 
 (defn wrap-reagent [js-name]
   `(def ~(symbol (to-kebab js-name))
-    (r/adapt-react-class (~(symbol (str ".-" js-name)) ~'js/ReactNative.))))
+    (r/adapt-react-class (~(symbol (str ".-" js-name)) ~'js/ReactNative))))
 
 
 (defmacro wrap-all []
