@@ -3,7 +3,7 @@
  "This namespace is automatically generated from the React Native docs.")
 (def
  components
- ["ActivityIndicatorIOS"
+ ["ActivityIndicator"
   "Animated.Image"
   "Animated.Text"
   "Animated.View"
