@@ -2,6 +2,13 @@
  natal-shell.linking
  "This namespace is automatically generated from the React Native docs.")
 (clojure.core/defmacro
+ linking
+ [& args]
+ (clojure.core/seq
+  (clojure.core/concat
+   (clojure.core/list 'js/ReactNative.Linking.)
+   args)))
+(clojure.core/defmacro
  add-event-listener
  [& args]
  (clojure.core/seq

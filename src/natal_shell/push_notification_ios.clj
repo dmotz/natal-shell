@@ -58,6 +58,14 @@
    (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
+ remove-event-listener
+ [& args]
+ (clojure.core/seq
+  (clojure.core/concat
+   (clojure.core/list '.removeEventListener)
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
+   args)))
+(clojure.core/defmacro
  request-permissions
  [& args]
  (clojure.core/seq
@@ -82,14 +90,6 @@
    (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
- remove-event-listener
- [& args]
- (clojure.core/seq
-  (clojure.core/concat
-   (clojure.core/list '.removeEventListener)
-   (clojure.core/list 'js/ReactNative.PushNotificationIOS)
-   args)))
-(clojure.core/defmacro
  pop-initial-notification
  [& args]
  (clojure.core/seq
@@ -98,12 +98,19 @@
    (clojure.core/list 'js/ReactNative.PushNotificationIOS)
    args)))
 (clojure.core/defmacro
- constructor
+ get-initial-notification
  [& args]
  (clojure.core/seq
   (clojure.core/concat
-   (clojure.core/list '.constructor)
+   (clojure.core/list '.getInitialNotification)
    (clojure.core/list 'js/ReactNative.PushNotificationIOS)
+   args)))
+(clojure.core/defmacro
+ push-notification-ios
+ [& args]
+ (clojure.core/seq
+  (clojure.core/concat
+   (clojure.core/list 'js/ReactNative.PushNotificationIOS.)
    args)))
 (clojure.core/defmacro
  get-message
