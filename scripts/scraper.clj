@@ -66,8 +66,12 @@
        ~'~(symbol (str "js/ReactNative." react-ns))
        ~@~'args)))
 
+(defn constructor-macro [react-ns]
+ `(defmacro ~(symbol (to-kebab react-ns)) [& ~'args]
+    `(~'~(symbol (str "js/ReactNative." react-ns "."))
+       ~@~'args)))
 
-(defn constructor-macro [react-ns js-name]
+(defn constructor-macro' [react-ns js-name]
   `(defmacro ~(symbol (to-kebab js-name)) [& ~'args]
      `(~'~(symbol (str "js/ReactNative." react-ns "." js-name "."))
         ~@~'args)))
@@ -101,11 +105,15 @@
           (binding [*out* w]
             (pprint (make-ns (to-kebab k)))
             (doseq [m methods]
-              (pprint (method-macro k m)))
+              (pprint
+                (if (= m "constructor")
+                  (constructor-macro k)
+                  (method-macro k m))))
             (doseq [p properties]
               (pprint
                 ((if (contains? (get constructors k) p)
-                  constructor-macro
+                  constructor-macro'
                   property-macro) k p)))))))))
+
 
 (init)
