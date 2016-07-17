@@ -22,7 +22,7 @@ Natal Shell exposes React components as macros which you can require like so:
 ```clojure
 (ns future-app.core
   (:require [om.core :as om])
-  (:require-macros [natal-shell.components :refer [view text switch-ios image slider-ios]]))
+  (:require-macros [natal-shell.components :refer [view text switch image slider-ios]]))
 ```
 
 Use them like this:
@@ -38,7 +38,7 @@ You can pass children as the trailing arguments or as a collection:
   nil
   (interleave
     (map #(text nil %) ["un" "deux" "trois"])
-    (repeat (switch-ios {:style {:margin 20}})))))
+    (repeat (switch {:style {:margin 20}})))))
 ```
 
 All component names are normalized in Clojure's snake-case, for example:
