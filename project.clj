@@ -3,6 +3,8 @@
   :url "https://github.com/dmotz/natal-shell/"
   :license {:name "The MIT License (MIT)"
             :url "http://opensource.org/licenses/mit-license.html"}
-  :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/core.async "0.2.385"]
-                 [enlive "1.1.6"]])
+  :dependencies [[org.clojure/clojure "1.8.0"]]
+
+  :profiles {:dev
+             {:dependencies [[org.clojure/core.async "0.2.385"]
+                             [enlive "1.1.6"]]}})
